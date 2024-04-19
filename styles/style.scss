@@ -20,6 +20,7 @@
   font-size: var(--size);
   transition: var(--suave);
   color: var(--branco);
+  box-sizing: border-box;
 }
 
 html {
@@ -37,9 +38,12 @@ header {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  cursor: default;
+
 
   .logo {
-    background-color: var(--branco);
+    background: url(../assets/city.gif) no-repeat;
+    background-size: cover;
     border-radius: 35px;
     width: 90%;
     height: 80%;
@@ -67,14 +71,16 @@ header {
         height: 40px;
         border-radius: 50px;
         border: none;
+        box-shadow: inset 0px -5px 1px rgba(0, 0, 0, 0.2);
+        font-weight: bold;
 
         &:hover {
-          box-shadow: inset 0px -5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: none;
+          cursor: pointer;
 
           a {
-            font-weight: bold;
-            font-size: calc(var(--size) * 1.1);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            font-size: calc(var(--size) * .95);
+            text-shadow: 0px -1px 2px rgba(0, 0, 0, .2);
           }
         }
 
@@ -108,32 +114,56 @@ main {
     width: 90%;
     height: 80vh;
     border-radius: 35px;
+    cursor: default;
+
 
     .sobre-img {
       margin: auto;
       width: 95%;
-      height: 60%;
+      height: 64%;
       border-radius: 35px;
       display: grid;
       place-items: center;
-      background-color: var(--azul-2);
+      background: url(../assets/city.gif);
     }
 
     h2 {
       font-size: calc(var(--size) * 2);
       font-weight: bold;
-      margin: 15px 10px;
+      margin: 15px 30px;
+      text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
     }
 
     p {
-      padding: 15px 10px;
+      padding: 15px 30px;
+
+      strong {
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+
+        }
+      }
+
+      span {
+        font-weight: bold;
+
+        @keyframes glow {
+          50% {
+            color: var(--azul-1);
+          }
+        }
+
+        animation: glow infinite 10s ease;
+      }
     }
   }
 
   .reel {
     margin: 20px auto;
     width: 90%;
-    height: 600px;
+    height: 95vh;
     background: url(../assets/city.gif) no-repeat;
     background-size: cover;
     border-radius: 35px;
@@ -231,6 +261,7 @@ main {
     margin: auto;
     background-color: rgba(153, 214, 234, 0.5);
     border-radius: 35px;
+
     .img-ctt {
       width: 100px;
       height: 100px;
@@ -317,6 +348,7 @@ footer {
     p {
       color: var(--preto);
       text-align: center;
+
       a {
         color: var(--amarelo-1);
         text-decoration: none;
