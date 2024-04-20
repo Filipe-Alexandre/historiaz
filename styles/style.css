@@ -131,7 +131,7 @@ main .sobre p span {
 main .reel {
   margin: 20px auto;
   width: 90%;
-  height: 95vh;
+  height: 90vh;
   background: url(../assets/city.gif) no-repeat;
   background-size: cover;
   border-radius: 35px;
@@ -185,6 +185,7 @@ main .reel .conteudo .like .fa-solid {
 main .reel .conteudo .redes-insta {
   grid-area: insta;
   background: -webkit-linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -256,7 +257,9 @@ main .voltar {
 main .voltar span i {
   font-size: calc(var(--size) * 1.5);
 }
-main footer {
+
+footer {
+  background-color: red;
   font-family: var(--fonte-1);
   background: linear-gradient(to bottom, transparent, var(--azul-2));
   margin-top: 20px;
@@ -265,19 +268,19 @@ main footer {
   justify-content: space-evenly;
   align-items: center;
 }
-main footer .servicos ul {
+footer .servicos ul {
   text-align: center;
 }
-main footer .servicos ul li {
+footer .servicos ul li {
   color: var(--preto);
   margin: 5px auto;
   font-size: calc(var(--size) * 1.1);
 }
-main footer .servicos ul hr {
+footer .servicos ul hr {
   border: 1px solid var(--amarelo-1);
   width: 70%;
 }
-main footer .redes {
+footer .redes {
   width: 90%;
   margin: auto;
   display: flex;
@@ -285,14 +288,14 @@ main footer .redes {
   gap: 15%;
   margin: 20px auto;
 }
-main footer .redes i {
+footer .redes i {
   font-size: calc(var(--size) * 2);
 }
-main footer .direitos p {
+footer .direitos p {
   color: var(--preto);
   text-align: center;
 }
-main footer .direitos p a {
+footer .direitos p a {
   color: var(--amarelo-1);
   text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

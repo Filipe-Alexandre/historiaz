@@ -163,7 +163,7 @@ main {
   .reel {
     margin: 20px auto;
     width: 90%;
-    height: 95vh;
+    height: 90vh;
     background: url(../assets/city.gif) no-repeat;
     background-size: cover;
     border-radius: 35px;
@@ -230,6 +230,7 @@ main {
       .redes-insta {
         grid-area: insta;
         background: -webkit-linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -245,7 +246,8 @@ main {
 
       .redes-wpp {
         grid-area: wpp;
-        i{
+
+        i {
           color: #25D366;
         }
       }
@@ -320,59 +322,58 @@ main {
       }
     }
   }
+}
 
+footer {
+  background-color: red;
+  font-family: var(--fonte-1);
+  background: linear-gradient(to bottom, transparent, var(--azul-2));
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 
-  footer {
-    font-family: var(--fonte-1);
-    background: linear-gradient(to bottom, transparent, var(--azul-2));
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  .servicos {
+    ul {
+      text-align: center;
 
-    .servicos {
-
-      ul {
-        text-align: center;
-
-        li {
-          color: var(--preto);
-          margin: 5px auto;
-          font-size: calc(var(--size) * 1.1);
-        }
-
-        hr {
-          border: 1px solid var(--amarelo-1);
-          width: 70%;
-        }
-      }
-    }
-
-    .redes {
-      width: 90%;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      gap: 15%;
-      margin: 20px auto;
-
-      i {
-        font-size: calc(var(--size) * 2);
-      }
-    }
-
-    .direitos {
-      p {
+      li {
         color: var(--preto);
-        text-align: center;
-
-        a {
-          color: var(--amarelo-1);
-          text-decoration: none;
-        }
+        margin: 5px auto;
+        font-size: calc(var(--size) * 1.1);
       }
 
+      hr {
+        border: 1px solid var(--amarelo-1);
+        width: 70%;
+      }
     }
+  }
+
+  .redes {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    margin: 20px auto;
+
+    i {
+      font-size: calc(var(--size) * 2);
+    }
+  }
+
+  .direitos {
+    p {
+      color: var(--preto);
+      text-align: center;
+
+      a {
+        color: var(--amarelo-1);
+        text-decoration: none;
+      }
+    }
+
   }
 }
