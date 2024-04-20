@@ -1,6 +1,6 @@
-let duvida = document.querySelector(".cx-dvd")
+let like = document.querySelector(".fa-regular")
 let master = document.querySelector(".gaveta-master")
 
-duvida.addEventListener("click", () => {
-  duvida.classList.toggle('cx-dvd-')
+like.addEventListener("click", () => {
+  like.classList.toggle('fa-solid')
 })
