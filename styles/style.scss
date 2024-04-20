@@ -260,6 +260,10 @@ main {
         border-radius: 50px;
         height: 40px;
         width: 100%;
+
+        &:hover {
+          cursor: text;
+        }
       }
     }
   }

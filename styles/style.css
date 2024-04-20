@@ -210,6 +210,9 @@ main .reel .conteudo button {
   height: 40px;
   width: 100%;
 }
+main .reel .conteudo button:hover {
+  cursor: text;
+}
 main .contato {
   display: flex;
   justify-content: space-evenly;
