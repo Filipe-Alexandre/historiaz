@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --cor-1: #592418;
+  --cor-2: #D9886A;
+  --cor-3: #F2B6A0;
+  --destaque-1: #8FD9D9;
+  --destaque-2: #9CEBAA;
+  --preto-1: #0E0E0E;
+  --branco-1: #FAF9F6;
+  --titulo: "Birthstone Bounce", cursive;
+  --tetxo: "Poppins", sans-serif;
+  --size: 1.8rem;
+  --suave: .5s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--cor-3);
+}
+
+header {
+  width: 100%;
+  background: var(--cor-1) url(../assets/bg-flores.jpg);
+  background-size: cover;
+  filter: brightness(95%);
+  height: 135px;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+}
+header h1 {
+  font-family: var(--titulo);
+  font-weight: 500;
+  font-size: calc(var(--size) * 1.2);
+  text-shadow: 0px 2px 0px #fff;
+}
+
+main {
+  font-family: var(--tetxo);
+}
+main .intro {
+  background-color: var(--cor-1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .intro h2 {
+  color: var(--branco-1);
+  font-size: calc(var(--size) * 0.9);
+  font-weight: 600;
+  width: 80%;
+  margin: 10px auto;
+}
+main .intro p {
+  color: var(--branco-1);
+  font-size: calc(var(--size) * 0.75);
+  font-weight: 300;
+  width: 80%;
+  margin: auto;
+  line-height: 1.6rem;
+}
+main .intro p strong {
+  color: var(--cor-2);
+}
+main .categorias {
+  width: 90%;
+  margin: 20px auto;
+  background-color: var(--cor-3);
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  gap: 5px;
+  grid-template-rows: repeat(9, 65px);
+  grid-template-columns: repeat(2, 130px);
+  grid-template-areas: "cat bio" "adm bio" "adm hab" "mkt hab" "mkt cos" "fac cos" "fac cor" "bem cor" "bem fim";
+}
+main .categorias .btn {
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  border-radius: 20px;
+  height: 130px;
+  width: 130px;
+  background-color: var(--cor-1);
+  color: var(--cor-2);
+}
+main .categorias .btn-cat-ini,
+main .categorias .btn-cat-fim {
+  color: var(--cor-1);
+  background-color: var(--cor-2);
+  border-left: 10px solid var(--cor-1);
+  width: 130px;
+  height: 45px;
+  border-radius: 10px;
+}
+main .categorias .btn-cat-ini {
+  grid-area: cat;
+  font-size: calc(var(--size) * 0.65);
+}
+main .categorias .btn-cat-fim {
+  grid-area: fim;
+  font-family: var(--titulo);
+  font-size: calc(var(--size) * 1);
+}
+main .categorias .btn-bio {
+  grid-area: bio;
+}
+main .categorias .btn-adm {
+  grid-area: adm;
+}
+main .categorias .btn-mkt {
+  grid-area: mkt;
+}
+main .categorias .btn-hab {
+  grid-area: hab;
+}
+main .categorias .btn-cos {
+  grid-area: cos;
+}
+main .categorias .btn-fac {
+  grid-area: fac;
+}
+main .categorias .btn-cor {
+  grid-area: cor;
+}
+main .categorias .btn-bem {
+  grid-area: bem;
+}
+main .categorias .btn-fim {
+  grid-area: fim;
+}/*# sourceMappingURL=style.css.map */
