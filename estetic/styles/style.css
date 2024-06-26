@@ -18,7 +18,7 @@
 }
 
 html {
-  background-color: var(--cor-3);
+  background-color: var(--cor-1);
 }
 
 header {
@@ -44,7 +44,7 @@ main {
 }
 main .intro {
   background-color: var(--cor-1);
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,14 +52,14 @@ main .intro {
 }
 main .intro h2 {
   color: var(--branco-1);
-  font-size: calc(var(--size) * 0.9);
+  font-size: calc(var(--size) * 1);
   font-weight: 600;
   width: 80%;
   margin: 10px auto;
 }
 main .intro p {
   color: var(--branco-1);
-  font-size: calc(var(--size) * 0.75);
+  font-size: calc(var(--size) * 0.8);
   font-weight: 300;
   width: 80%;
   margin: auto;
@@ -69,14 +69,15 @@ main .intro p strong {
   color: var(--cor-2);
 }
 main .categorias {
-  width: 90%;
-  margin: 20px auto;
+  width: 100vw;
+  margin: auto;
   background-color: var(--cor-3);
+  padding: 20px 0;
   display: grid;
   place-items: center;
   justify-content: center;
-  gap: 5px;
-  grid-template-rows: repeat(9, 65px);
+  gap: 10px;
+  grid-template-rows: repeat(9, 60px);
   grid-template-columns: repeat(2, 130px);
   grid-template-areas: "cat bio" "adm bio" "adm hab" "mkt hab" "mkt cos" "fac cos" "fac cor" "bem cor" "bem fim";
 }
@@ -134,4 +135,53 @@ main .categorias .btn-bem {
 }
 main .categorias .btn-fim {
   grid-area: fim;
+}
+
+footer {
+  background-color: var(--cor-3);
+}
+footer .rodape {
+  font-family: var(--tetxo);
+  color: var(--branco-1);
+  background-color: var(--cor-2);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px 20px 0 0;
+  padding-top: 10px;
+}
+footer .rodape h2 {
+  color: var(--cor-1);
+  font-family: var(--titulo);
+  font-weight: 500;
+  font-size: calc(var(--size) * 1);
+  text-shadow: 0px 2px 0px #fff;
+}
+footer .rodape ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+  width: 70%;
+}
+footer .rodape ul li {
+  font-size: calc(var(--size) * 0.7);
+}
+footer .rodape ul li:nth-child(4) {
+  background-color: green;
+  color: var(--cor-1);
+  font-size: calc(var(--size) * 0.8);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .rodape ul li:nth-child(4) i {
+  font-size: calc(var(--size) * 1.2);
+}
+footer .rodape strong {
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
