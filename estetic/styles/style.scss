@@ -210,10 +210,9 @@ footer {
       }
 
       li:nth-child(4) {
-        background-color: green;
         color: var(--cor-1);
         font-size: calc(var(--size) * .8);
-        font-weight: 500;
+        font-weight: 600;
         display: flex;
         align-items: center;
         gap: 10px;
