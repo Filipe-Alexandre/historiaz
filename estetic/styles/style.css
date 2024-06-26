@@ -19,6 +19,7 @@
 
 html {
   background-color: var(--cor-1);
+  scroll-behavior: smooth;
 }
 
 header {
@@ -174,12 +175,16 @@ footer .rodape ul li:nth-child(4) {
   color: var(--cor-1);
   font-size: calc(var(--size) * 0.8);
   font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 footer .rodape ul li:nth-child(4) i {
   font-size: calc(var(--size) * 1.2);
+}
+footer .rodape ul li:nth-child(4) a {
+  text-decoration: none;
+  color: var(--cor-1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 footer .rodape p {
   width: 90%;
