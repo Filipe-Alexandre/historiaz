@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --cor-1: #592418;
-  --cor-2: #D9886A;
+  --cor-2: #d88769;
   --cor-3: #F2B6A0;
   --destaque-1: #8FD9D9;
   --destaque-2: #9CEBAA;
@@ -84,7 +84,6 @@ main .categorias {
 }
 main .categorias .btn {
   display: grid;
-  place-items: center;
   font-weight: bold;
   border-radius: 20px;
   height: 130px;
@@ -94,6 +93,7 @@ main .categorias .btn {
 }
 main .categorias .btn-cat-ini,
 main .categorias .btn-cat-fim {
+  place-items: center;
   color: var(--cor-1);
   background-color: var(--cor-2);
   border-left: 10px solid var(--cor-1);
@@ -109,6 +109,24 @@ main .categorias .btn-cat-fim {
   grid-area: fim;
   font-family: var(--titulo);
   font-size: calc(var(--size) * 1);
+}
+main .categorias .span {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+}
+main .categorias .span img {
+  height: 60px;
+  transform: translate(50%, 10px);
+}
+main .categorias .span-bio {
+  background: url(../assets/bio-bg.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: right bottom;
+  background-position: 200% 200%;
 }
 main .categorias .btn-bio {
   grid-area: bio;

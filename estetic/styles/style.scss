@@ -3,7 +3,7 @@
 :root {
   //Cores:
   --cor-1: #592418;
-  --cor-2: #D9886A;
+  --cor-2: #d88769;
   --cor-3: #F2B6A0;
   --destaque-1: #8FD9D9;
   --destaque-2: #9CEBAA;
@@ -104,7 +104,6 @@ main {
 
     .btn {
       display: grid;
-      place-items: center;
       font-weight: bold;
       border-radius: 20px;
       height: 130px;
@@ -115,6 +114,7 @@ main {
 
     .btn-cat-ini,
     .btn-cat-fim {
+      place-items: center;
       color: var(--cor-1);
       background-color: var(--cor-2);
       border-left: 10px solid var(--cor-1);
@@ -132,6 +132,27 @@ main {
       grid-area: fim;
       font-family: var(--titulo);
       font-size: calc(var(--size) * 1);
+    }
+
+    .span {
+      height: 100%;
+      width: 100%;
+      border-radius: 20px;
+      display: grid;
+      place-items: center;
+
+      img {
+        height: 60px;
+        transform: translate(50%, 10px);
+      }
+    }
+
+    .span-bio {
+      background: url(../assets/bio-bg.png);
+      background-repeat: no-repeat;
+      background-size: 90%;
+      background-position: right bottom;
+      background-position: 200% 200%;
     }
 
     .btn-bio {
