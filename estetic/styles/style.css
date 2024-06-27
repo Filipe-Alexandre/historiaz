@@ -53,18 +53,18 @@ main .intro {
 }
 main .intro h2 {
   color: var(--branco-1);
-  font-size: calc(var(--size) * 1);
+  font-size: calc(var(--size) * 1.1);
   font-weight: 600;
   width: 80%;
   margin: 10px auto;
 }
 main .intro p {
   color: var(--branco-1);
-  font-size: calc(var(--size) * 0.8);
+  font-size: calc(var(--size) * 0.9);
   font-weight: 300;
   width: 80%;
   margin: auto;
-  line-height: 1.6rem;
+  line-height: 1.9rem;
 }
 main .intro p strong {
   color: var(--cor-2);
