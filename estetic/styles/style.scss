@@ -25,6 +25,7 @@
 html {
   background-color: var(--cor-1);
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 header {
@@ -110,6 +111,19 @@ main {
       width: 130px;
       background-color: var(--cor-1);
       color: var(--cor-2);
+
+      cursor: pointer;
+      transition: .5s ease;
+
+      &:hover {
+        scale: 1.1;
+
+        .span {
+          img {
+            scale: 1.07;
+          }
+        }
+      }
     }
 
     .btn-cat-ini,
@@ -134,6 +148,38 @@ main {
       font-size: calc(var(--size) * 1);
     }
 
+    .span-bio {
+      background: url(../assets/bio-bg.png);
+    }
+
+    .span-adm {
+      background: url(../assets/adm-bg.png);
+    }
+
+    .span-mkt {
+      background: url(../assets/mkt-bg.png);
+    }
+
+    .span-hab {
+      background: url(../assets/hab-bg.png);
+    }
+
+    .span-cos {
+      background: url(../assets/cos-bg.png);
+    }
+
+    .span-fac {
+      background: url(../assets/fac-bg.png);
+    }
+
+    .span-cor {
+      background: url(../assets/cor-bg.png);
+    }
+
+    .span-bem {
+      background: url(../assets/bem-bg.png);
+    }
+
     .span {
       height: 100%;
       width: 100%;
@@ -141,18 +187,17 @@ main {
       display: grid;
       place-items: center;
 
-      img {
-        height: 60px;
-        transform: translate(50%, 10px);
-      }
-    }
-
-    .span-bio {
-      background: url(../assets/bio-bg.png);
       background-repeat: no-repeat;
       background-size: 90%;
       background-position: right bottom;
       background-position: 200% 200%;
+
+      img {
+        height: 60px;
+        transform: translate(50%, 10px);
+
+        transition: .5s ease;
+      }
     }
 
     .btn-bio {
@@ -228,13 +273,27 @@ footer {
 
       li {
         font-size: calc(var(--size) * .7);
+        cursor: pointer;
+        transition: .5s ease;
+
+        &:hover {
+          font-weight: bold;
+          font-size: calc(var(--size) * .8);
+        }
+      }
+
+      li:nth-child(3) {
+
+        &:hover {
+          font-weight: normal;
+          font-size: calc(var(--size) * .7);
+          cursor: default;
+        }
       }
 
       li:nth-child(4) {
-        color: var(--cor-1);
         font-size: calc(var(--size) * .8);
         font-weight: 600;
-
 
         i {
           font-size: calc(var(--size) * 1.2);
@@ -246,7 +305,6 @@ footer {
           display: flex;
           align-items: center;
           gap: 10px;
-
         }
       }
     }

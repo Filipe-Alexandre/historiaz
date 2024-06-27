@@ -20,6 +20,7 @@
 html {
   background-color: var(--cor-1);
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 header {
@@ -90,6 +91,14 @@ main .categorias .btn {
   width: 130px;
   background-color: var(--cor-1);
   color: var(--cor-2);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+main .categorias .btn:hover {
+  scale: 1.1;
+}
+main .categorias .btn:hover .span img {
+  scale: 1.07;
 }
 main .categorias .btn-cat-ini,
 main .categorias .btn-cat-fim {
@@ -110,23 +119,45 @@ main .categorias .btn-cat-fim {
   font-family: var(--titulo);
   font-size: calc(var(--size) * 1);
 }
+main .categorias .span-bio {
+  background: url(../assets/bio-bg.png);
+}
+main .categorias .span-adm {
+  background: url(../assets/adm-bg.png);
+}
+main .categorias .span-mkt {
+  background: url(../assets/mkt-bg.png);
+}
+main .categorias .span-hab {
+  background: url(../assets/hab-bg.png);
+}
+main .categorias .span-cos {
+  background: url(../assets/cos-bg.png);
+}
+main .categorias .span-fac {
+  background: url(../assets/fac-bg.png);
+}
+main .categorias .span-cor {
+  background: url(../assets/cor-bg.png);
+}
+main .categorias .span-bem {
+  background: url(../assets/bem-bg.png);
+}
 main .categorias .span {
   height: 100%;
   width: 100%;
   border-radius: 20px;
   display: grid;
   place-items: center;
-}
-main .categorias .span img {
-  height: 60px;
-  transform: translate(50%, 10px);
-}
-main .categorias .span-bio {
-  background: url(../assets/bio-bg.png);
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: right bottom;
   background-position: 200% 200%;
+}
+main .categorias .span img {
+  height: 60px;
+  transform: translate(50%, 10px);
+  transition: 0.5s ease;
 }
 main .categorias .btn-bio {
   grid-area: bio;
@@ -188,9 +219,19 @@ footer .rodape ul {
 }
 footer .rodape ul li {
   font-size: calc(var(--size) * 0.7);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+footer .rodape ul li:hover {
+  font-weight: bold;
+  font-size: calc(var(--size) * 0.8);
+}
+footer .rodape ul li:nth-child(3):hover {
+  font-weight: normal;
+  font-size: calc(var(--size) * 0.7);
+  cursor: default;
 }
 footer .rodape ul li:nth-child(4) {
-  color: var(--cor-1);
   font-size: calc(var(--size) * 0.8);
   font-weight: 600;
 }
