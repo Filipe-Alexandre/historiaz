@@ -18,7 +18,7 @@
 }
 
 html {
-  background-color: var(--cor-1);
+  background-color: var(--cor-3);
   scroll-behavior: smooth;
   cursor: default;
 }
@@ -91,14 +91,23 @@ main .categorias .btn {
   width: 130px;
   background-color: var(--cor-1);
   color: var(--cor-2);
+  text-align: center;
   cursor: pointer;
   transition: 0.5s ease;
 }
 main .categorias .btn:hover {
   scale: 1.1;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 main .categorias .btn:hover .span img {
-  scale: 1.07;
+  scale: 1.05;
+}
+main .categorias .btn:active {
+  scale: 0.95;
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.2);
+}
+main .categorias .btn:active .span img {
+  scale: 1;
 }
 main .categorias .btn-cat-ini,
 main .categorias .btn-cat-fim {
@@ -195,6 +204,7 @@ footer .rodape {
   color: var(--branco-1);
   background-color: var(--cor-2);
   height: 250px;
+  width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -202,12 +212,14 @@ footer .rodape {
   border-radius: 20px 20px 0 0;
   padding-top: 10px;
 }
-footer .rodape h2 {
+footer .rodape .footer-h2 {
   color: var(--cor-1);
   font-family: var(--titulo);
   font-weight: 500;
   font-size: calc(var(--size) * 1);
   text-shadow: 0px 2px 0px #fff;
+  border: none;
+  background: none;
 }
 footer .rodape ul {
   display: flex;
@@ -216,6 +228,13 @@ footer .rodape ul {
   align-items: center;
   height: 70%;
   width: 70%;
+}
+footer .rodape ul a {
+  text-decoration: none;
+  display: flex;
+  color: var(--branco-1);
+  align-items: center;
+  gap: 10px;
 }
 footer .rodape ul li {
   font-size: calc(var(--size) * 0.7);
@@ -252,4 +271,69 @@ footer .rodape p {
 }
 footer .rodape p strong {
   font-weight: bold;
+}
+
+body#esteticistas {
+  font-family: var(--tetxo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body#esteticistas main a {
+  text-decoration: none;
+  color: var(--cor-1);
+}
+body#esteticistas .main-h2 {
+  display: grid;
+  place-items: center;
+  margin: 20px auto;
+  background-color: var(--branco-1);
+  border-left: 15px solid var(--cor-2);
+  color: var(--cor-1);
+  font-size: calc(var(--size) * 1);
+  font-weight: 600;
+  letter-spacing: 2px;
+  height: 70px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+}
+body#esteticistas .integrantes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 225px;
+  height: 300px;
+  background-color: var(--branco-1);
+  border-radius: 20px;
+  text-align: right;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin: 20px auto;
+  text-align: right;
+  transition: 0.5s ease;
+}
+body#esteticistas .integrantes:hover {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  scale: 1.05;
+  cursor: pointer;
+}
+body#esteticistas .integrantes:active {
+  scale: 0.95;
+  box-shadow: inset -3px -3px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.5S ease;
+}
+body#esteticistas .integrantes img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: var(--cor-2);
+}
+body#esteticistas .integrantes h3 {
+  font-size: calc(var(--size) * 0.8);
+  letter-spacing: 2px;
+  text-align: center;
+  width: 80%;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

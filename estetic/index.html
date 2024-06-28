@@ -1,54 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Esthetic 4 You</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="styles/reset.css">
-<link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    html {
+      background-color: var(--cor-1);
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Esthetic 4 You</h1>
   </header>
+
   <main>
     <div class="intro">
       <div class="intro-txt">
         <h2>Sobre o Projeto:</h2>
         <p>
-          Este site foi desenvolvido para apresentar o <strong>projeto integrador</strong> de estética, com o objetivo de informar e relembrar tudo que foi apresentado durante o curso.
+          Este site foi desenvolvido para apresentar o <strong>projeto integrador</strong> de estética, com o objetivo
+          de informar e relembrar tudo que foi apresentado durante o curso.
         </p>
       </div>
     </div>
 
     <div class="categorias">
       <div class="btn btn-cat-ini">categorias</div>
-      <div class="btn btn-bio"><span class=" span span-bio">biossegurança <img src="assets/bio.png" alt=""></span></div>
-      <div class="btn btn-adm"><span class=" span span-adm">administração <img src="assets/adm.png" alt=""></span></div>
-      <div class="btn btn-mkt"><span class=" span span-mkt">marketing <img src="assets/mkt.png" alt=""></span></div>
-      <div class="btn btn-hab"><span class=" span span-hab">hábitos saudáveis <img src="assets/hab.png" alt=""></span></div>
-      <div class="btn btn-cos"><span class=" span span-cos">cosmetologia <img src="assets/cos.png" alt=""></span></div>
-      <div class="btn btn-fac"><span class=" span span-fac">facial <img src="assets/fac.png" alt=""></span></div>
-      <div class="btn btn-cor"><span class=" span span-cor">corporal <img src="assets/cor.png" alt=""></span></div>
-      <div class="btn btn-bem"><span class=" span span-bem">bem estar <img src="assets/bem.png" alt=""></span></div>
+
+      <div class="btn btn-bio" onclick="link('bio.html')"><span class=" span span-bio">biossegurança <img src="assets/bio.png" alt="biossegurança"></span></div>
+
+      <div class="btn btn-adm" onclick="link('adm.html')"><span class=" span span-adm">administração <img src="assets/adm.png" alt="administração"></span></div>
+
+      <div class="btn btn-mkt" onclick="link('mkt.html')"><span class=" span span-mkt">marketing <img src="assets/mkt.png" alt="marketing"></span></div>
+
+      <div class="btn btn-hab" onclick="link('hab.html')"><span class=" span span-hab">hábitos saudáveis <img src="assets/hab.png" alt="hábitos saudáveis"></span>
+      </div>
+
+      <div class="btn btn-cos" onclick="link('cos.html')"><span class=" span span-cos">cosmetologia <img src="assets/cos.png" alt="cosmetologia"></span></div>
+
+      <div class="btn btn-fac" onclick="link('fac.html')"><span class=" span span-fac">facial <img src="assets/fac.png" alt="fac"></span></div>
+
+      <div class="btn btn-cor" onclick="link('cor.html')"><span class=" span span-cor">corporal <img src="assets/cor.png" alt="cor"></span></div>
+
+      <div class="btn btn-bem" onclick="link('bem.html')"><span class=" span span-bem">bem estar <img src="assets/bem.png" alt="bem"></span></div>
+
       <div class="btn btn-cat-fim">4 You</div>
     </div>
   </main>
 
   <footer>
     <div class="rodape">
-      <h2>Esthetic 4 You</h2>
+      <h2 class="footer-h2">Esthetic 4 You</h2>
 
       <ul>
         <li onclick="window.scroll(0, -10)">Home</li>
-        <li>Esteticistas</li>
+        <li><a href="esteticistas.html">Esteticistas</a></li>
         <li>Entre em contato:</li>
-        <li><a href="https://www.instagram.com/esthetic_4u/" target="_blank"><i class="fa-brands fa-instagram"></i> instagram</a></li>
+        <li><a href="https://www.instagram.com/esthetic_4u/" target="_blank"><i class="fa-brands fa-instagram"></i>
+            instagram</a></li>
       </ul>
-    <p>Todos os direitos reservados a <strong>esthetic_4u</strong></p>
-    <p>Desenvolvido por <strong>Filipe Alx</strong></p>
+      <p>Todos os direitos reservados a <strong>esthetic_4u</strong></p>
+      <p>Desenvolvido por <strong>Filipe Alx</strong></p>
     </div>
   </footer>
 </body>
+
+<script>
+  function link(url) {
+    window.location.href = url;
+}
+</script>
+
 </html>
