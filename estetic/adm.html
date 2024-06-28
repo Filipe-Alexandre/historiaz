@@ -14,12 +14,12 @@
 
 <body id="adm">
   <header>
-    <h1>Esthetic 4 You</h1>
+    <h1 onclick="link('index.html')">Esthetic 4 You</h1>
   </header>
 
   <main>
     <h2 class="main-h2">Administração</h2>
-    <div class="adm-cont">
+    <div class="div-cont">
       <h3 class="main-h3">Sobre administração</h3>
       <p>
         Administrar uma clínica de estética iniciante exige planejamento cuidadoso e gestão eficiente. Aqui estão os
@@ -85,4 +85,12 @@
       <p>Desenvolvido por <strong>Filipe Alx</strong></p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
+<script>
+  function link(url) {
+    window.location.href = url;
+  }
+</script>
+
+</html>
