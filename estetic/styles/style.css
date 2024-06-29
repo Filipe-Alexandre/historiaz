@@ -473,8 +473,9 @@ footer .rodape p strong {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 300px;
-  background: linear-gradient(-45deg, var(--destaque-1), var(--branco-1));
+  width: 325px;
+  height: 325px;
+  background: linear-gradient(45deg, var(--destaque-1), var(--branco-1));
   border-radius: 20px;
   padding: 10px;
 }
