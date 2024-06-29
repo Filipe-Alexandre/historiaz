@@ -65,7 +65,7 @@ main .intro h2 {
 }
 main .intro p {
   color: var(--branco-1);
-  font-size: calc(var(--size) * 0.9);
+  font-size: calc(var(--size) * 1.1);
   font-weight: 100;
   width: 80%;
   margin: auto;
