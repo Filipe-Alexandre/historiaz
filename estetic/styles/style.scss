@@ -345,7 +345,9 @@ footer {
 
 #esteticistas,
 #adm,
-#bio {
+#bio,
+#mkt,
+#cos {
   font-family: var(--tetxo);
   display: flex;
   flex-direction: column;
@@ -377,6 +379,12 @@ footer {
     border-radius: 10px;
 
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .sub-h2 {
+    border-left: 15px solid var(--destaque-1);
+    color: var(--destaque-2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   .main-h3 {
@@ -502,5 +510,38 @@ footer {
     padding: 10px;
     border-radius: 7px;
     margin: 10px auto;
+  }
+}
+
+.autoplay {
+  width: 90vw;
+  margin: 20px auto;
+
+  .slick-next,
+  .slick-prev {
+    visibility: hidden;
+  }
+
+  .slick-track {
+    border-radius: 20px;
+
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 300px;
+      background: linear-gradient(-45deg, var(--destaque-1), var(--branco-1));
+      border-radius: 20px;
+      padding: 10px;
+
+      h3 {
+        color: var(--preto-1) !important;
+      }
+
+      p {
+        line-height: calc(var(--size) * 1);
+      }
+    }
   }
 }

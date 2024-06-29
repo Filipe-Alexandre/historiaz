@@ -275,7 +275,9 @@ footer .rodape p strong {
 
 #esteticistas,
 #adm,
-#bio {
+#bio,
+#mkt,
+#cos {
   font-family: var(--tetxo);
   display: flex;
   flex-direction: column;
@@ -284,13 +286,17 @@ footer .rodape p strong {
 }
 #esteticistas main a,
 #adm main a,
-#bio main a {
+#bio main a,
+#mkt main a,
+#cos main a {
   text-decoration: none;
   color: var(--cor-1);
 }
 #esteticistas .main-h2,
 #adm .main-h2,
-#bio .main-h2 {
+#bio .main-h2,
+#mkt .main-h2,
+#cos .main-h2 {
   display: grid;
   place-items: center;
   margin: 20px auto;
@@ -305,9 +311,20 @@ footer .rodape p strong {
   border-radius: 10px;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
 }
+#esteticistas .sub-h2,
+#adm .sub-h2,
+#bio .sub-h2,
+#mkt .sub-h2,
+#cos .sub-h2 {
+  border-left: 15px solid var(--destaque-1);
+  color: var(--destaque-2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
 #esteticistas .main-h3,
 #adm .main-h3,
-#bio .main-h3 {
+#bio .main-h3,
+#mkt .main-h3,
+#cos .main-h3 {
   color: var(--cor-1);
   font-size: calc(var(--size) * 0.7);
   font-weight: 600;
@@ -315,12 +332,16 @@ footer .rodape p strong {
 }
 #esteticistas p,
 #adm p,
-#bio p {
+#bio p,
+#mkt p,
+#cos p {
   text-indent: calc(var(--size) * 0.5);
 }
 #esteticistas .integrantes,
 #adm .integrantes,
-#bio .integrantes {
+#bio .integrantes,
+#mkt .integrantes,
+#cos .integrantes {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -338,21 +359,27 @@ footer .rodape p strong {
 }
 #esteticistas .integrantes:hover,
 #adm .integrantes:hover,
-#bio .integrantes:hover {
+#bio .integrantes:hover,
+#mkt .integrantes:hover,
+#cos .integrantes:hover {
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
   scale: 1.05;
   cursor: pointer;
 }
 #esteticistas .integrantes:active,
 #adm .integrantes:active,
-#bio .integrantes:active {
+#bio .integrantes:active,
+#mkt .integrantes:active,
+#cos .integrantes:active {
   scale: 0.95;
   box-shadow: inset -3px -3px 4px rgba(0, 0, 0, 0.2);
   transition: 0.5S ease;
 }
 #esteticistas .integrantes img,
 #adm .integrantes img,
-#bio .integrantes img {
+#bio .integrantes img,
+#mkt .integrantes img,
+#cos .integrantes img {
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -360,7 +387,9 @@ footer .rodape p strong {
 }
 #esteticistas .integrantes h3,
 #adm .integrantes h3,
-#bio .integrantes h3 {
+#bio .integrantes h3,
+#mkt .integrantes h3,
+#cos .integrantes h3 {
   font-size: calc(var(--size) * 0.8);
   letter-spacing: 2px;
   text-align: center;
@@ -427,4 +456,31 @@ footer .rodape p strong {
   padding: 10px;
   border-radius: 7px;
   margin: 10px auto;
+}
+
+.autoplay {
+  width: 90vw;
+  margin: 20px auto;
+}
+.autoplay .slick-next,
+.autoplay .slick-prev {
+  visibility: hidden;
+}
+.autoplay .slick-track {
+  border-radius: 20px;
+}
+.autoplay .slick-track div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  background: linear-gradient(-45deg, var(--destaque-1), var(--branco-1));
+  border-radius: 20px;
+  padding: 10px;
+}
+.autoplay .slick-track div h3 {
+  color: var(--preto-1) !important;
+}
+.autoplay .slick-track div p {
+  line-height: calc(var(--size) * 1);
 }/*# sourceMappingURL=style.css.map */
