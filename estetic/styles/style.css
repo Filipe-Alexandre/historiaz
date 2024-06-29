@@ -18,10 +18,9 @@
 }
 
 html {
-  background-color: var(--cor-3);
+  background-color: var(--cor-1);
   scroll-behavior: smooth;
   cursor: default;
-  overflow-x: hidden;
 }
 
 header {
@@ -40,6 +39,10 @@ header h1 {
   font-weight: 500;
   font-size: calc(var(--size) * 1.2);
   text-shadow: 0px 2px 0px #fff;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 main {
