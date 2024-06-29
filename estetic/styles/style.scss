@@ -64,8 +64,8 @@ main {
 
     h2 {
       color: var(--branco-1);
-      font-size: calc(var(--size) * 1.1);
-      font-weight: 600;
+      font-size: calc(var(--size) * 1.6);
+      font-weight: 500;
       width: 80%;
       margin: 10px auto;
     }
@@ -73,13 +73,14 @@ main {
     p {
       color: var(--branco-1);
       font-size: calc(var(--size) * .9);
-      font-weight: 300;
+      font-weight: 100;
       width: 80%;
       margin: auto;
-      line-height: 1.9rem;
+      line-height: calc(var(--size) * 1.7);
 
       strong {
         color: var(--cor-2);
+        font-weight: 300;
       }
     }
   }
