@@ -26,6 +26,7 @@ html {
   background-color: var(--cor-3);
   scroll-behavior: smooth;
   cursor: default;
+  overflow-x: hidden;
 }
 
 header {
@@ -332,7 +333,7 @@ footer {
     }
 
     p {
-      width: 90%;
+      width: 100%;
       text-align: center;
       font-size: calc(var(--size) * .5);
 
@@ -453,6 +454,7 @@ footer {
   width: 90%;
   border-radius: 20px;
   padding: 15px;
+  line-height: calc(var(--size) * 1);
 }
 
 .div-cont-img {
@@ -528,13 +530,15 @@ footer {
 
     div {
       display: flex;
+      justify-content: space-evenly;
       flex-direction: column;
       gap: 20px;
-      width: 325px;
-      height: 325px;
-      background: linear-gradient(45deg, var(--destaque-1), var(--branco-1));
+      width: 90vw;
+      height: 80vh;
+      background: var(--branco-1);
       border-radius: 20px;
       padding: 10px;
+
 
       h3 {
         color: var(--preto-1) !important;
