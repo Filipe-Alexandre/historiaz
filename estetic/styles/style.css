@@ -18,7 +18,7 @@
 }
 
 html {
-  background-color: var(--cor-1);
+  background-color: var(--cor-3);
   scroll-behavior: smooth;
   cursor: default;
 }
@@ -99,6 +99,7 @@ main .categorias .btn {
   text-align: center;
   cursor: pointer;
   transition: 0.5s ease;
+  text-transform: capitalize;
 }
 main .categorias .btn:hover {
   scale: 1.1;
@@ -282,7 +283,10 @@ footer .rodape p strong {
 #adm,
 #bio,
 #mkt,
-#cos {
+#cos,
+#fac,
+#cor,
+#bem {
   font-family: var(--tetxo);
   display: flex;
   flex-direction: column;
@@ -293,7 +297,10 @@ footer .rodape p strong {
 #adm main a,
 #bio main a,
 #mkt main a,
-#cos main a {
+#cos main a,
+#fac main a,
+#cor main a,
+#bem main a {
   text-decoration: none;
   color: var(--cor-1);
 }
@@ -301,7 +308,10 @@ footer .rodape p strong {
 #adm .main-h2,
 #bio .main-h2,
 #mkt .main-h2,
-#cos .main-h2 {
+#cos .main-h2,
+#fac .main-h2,
+#cor .main-h2,
+#bem .main-h2 {
   display: grid;
   place-items: center;
   margin: 20px auto;
@@ -320,16 +330,21 @@ footer .rodape p strong {
 #adm .sub-h2,
 #bio .sub-h2,
 #mkt .sub-h2,
-#cos .sub-h2 {
+#cos .sub-h2,
+#fac .sub-h2,
+#cor .sub-h2,
+#bem .sub-h2 {
   border-left: 15px solid var(--destaque-1);
   color: var(--destaque-2);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 #esteticistas .main-h3,
 #adm .main-h3,
 #bio .main-h3,
 #mkt .main-h3,
-#cos .main-h3 {
+#cos .main-h3,
+#fac .main-h3,
+#cor .main-h3,
+#bem .main-h3 {
   color: var(--cor-1);
   font-size: calc(var(--size) * 0.7);
   font-weight: 600;
@@ -339,14 +354,20 @@ footer .rodape p strong {
 #adm p,
 #bio p,
 #mkt p,
-#cos p {
+#cos p,
+#fac p,
+#cor p,
+#bem p {
   text-indent: calc(var(--size) * 0.5);
 }
 #esteticistas .integrantes,
 #adm .integrantes,
 #bio .integrantes,
 #mkt .integrantes,
-#cos .integrantes {
+#cos .integrantes,
+#fac .integrantes,
+#cor .integrantes,
+#bem .integrantes {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -366,7 +387,10 @@ footer .rodape p strong {
 #adm .integrantes:hover,
 #bio .integrantes:hover,
 #mkt .integrantes:hover,
-#cos .integrantes:hover {
+#cos .integrantes:hover,
+#fac .integrantes:hover,
+#cor .integrantes:hover,
+#bem .integrantes:hover {
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
   scale: 1.05;
   cursor: pointer;
@@ -375,7 +399,10 @@ footer .rodape p strong {
 #adm .integrantes:active,
 #bio .integrantes:active,
 #mkt .integrantes:active,
-#cos .integrantes:active {
+#cos .integrantes:active,
+#fac .integrantes:active,
+#cor .integrantes:active,
+#bem .integrantes:active {
   scale: 0.95;
   box-shadow: inset -3px -3px 4px rgba(0, 0, 0, 0.2);
   transition: 0.5S ease;
@@ -384,7 +411,10 @@ footer .rodape p strong {
 #adm .integrantes img,
 #bio .integrantes img,
 #mkt .integrantes img,
-#cos .integrantes img {
+#cos .integrantes img,
+#fac .integrantes img,
+#cor .integrantes img,
+#bem .integrantes img {
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -394,12 +424,34 @@ footer .rodape p strong {
 #adm .integrantes h3,
 #bio .integrantes h3,
 #mkt .integrantes h3,
-#cos .integrantes h3 {
+#cos .integrantes h3,
+#fac .integrantes h3,
+#cor .integrantes h3,
+#bem .integrantes h3 {
   font-size: calc(var(--size) * 0.8);
   letter-spacing: 2px;
   text-align: center;
   width: 80%;
   text-decoration: none;
+}
+
+#bem .main-h2 {
+  display: grid;
+  place-items: center;
+  margin: 20px auto;
+  background-color: var(--branco-1);
+  border-left: 15px solid var(--destaque-2);
+  color: var(--destaque-2);
+  font-size: calc(var(--size) * 1);
+  font-weight: 600;
+  letter-spacing: 2px;
+  height: 70px;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+}
+#bem .main-h3 {
+  color: var(--preto-1);
 }
 
 .div-cont {
@@ -419,7 +471,7 @@ footer .rodape p strong {
   height: 300px;
   width: 300px;
   border-radius: 10px;
-  background: linear-gradient(to top, var(--cor-1), var(--cor-2));
+  background: linear-gradient(to bottom, var(--destaque-1), var(--destaque-2));
   border: 1px solid var(--branco-1);
   display: grid;
   place-items: center;

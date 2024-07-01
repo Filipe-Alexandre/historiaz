@@ -23,7 +23,7 @@
 }
 
 html {
-  background-color: var(--cor-1);
+  background-color: var(--cor-3);
   scroll-behavior: smooth;
   cursor: default;
 }
@@ -119,6 +119,7 @@ main {
       text-align: center;
       cursor: pointer;
       transition: .5s ease;
+      text-transform: capitalize;
 
       &:hover {
         scale: 1.1;
@@ -352,7 +353,10 @@ footer {
 #adm,
 #bio,
 #mkt,
-#cos {
+#cos,
+#fac,
+#cor,
+#bem {
   font-family: var(--tetxo);
   display: flex;
   flex-direction: column;
@@ -389,7 +393,6 @@ footer {
   .sub-h2 {
     border-left: 15px solid var(--destaque-1);
     color: var(--destaque-2);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   .main-h3 {
@@ -449,6 +452,32 @@ footer {
   }
 }
 
+#bem {
+  .main-h2 {
+    display: grid;
+    place-items: center;
+    margin: 20px auto;
+
+    background-color: var(--branco-1);
+    border-left: 15px solid var(--destaque-2);
+    color: var(--destaque-2);
+
+    font-size: calc(var(--size) * 1);
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    height: 70px;
+    width: 90%;
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .main-h3 {
+    color: var(--preto-1);
+  }
+}
+
 .div-cont {
   display: flex;
   flex-direction: column;
@@ -466,8 +495,8 @@ footer {
   height: 300px;
   width: 300px;
   border-radius: 10px;
-  background: linear-gradient(to top, var(--cor-1), var(--cor-2));
-  border: 1px solid var(--branco-1);
+  background: linear-gradient(to bottom, var(--destaque-1), var(--destaque-2));
+  border: 1px solid var(--branco-1); 
   display: grid;
   place-items: center;
 
