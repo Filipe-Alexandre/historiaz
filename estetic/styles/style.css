@@ -50,8 +50,7 @@ main {
 }
 main .intro {
   background-color: var(--cor-1);
-  min-height: -moz-fit-content;
-  min-height: fit-content;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,8 +62,10 @@ main .intro h2 {
   font-weight: 500;
   width: 80%;
   margin: 10px auto;
+  background-color: red;
 }
 main .intro p {
+  background-color: blue;
   color: var(--branco-1);
   font-size: calc(var(--size) * 1.1);
   font-weight: 100;
