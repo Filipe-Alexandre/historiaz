@@ -485,7 +485,8 @@ footer .rodape p strong {
   font-size: calc(var(--size) * 1);
   font-weight: 500;
   color: var(--cor-1);
-  margin-bottom: 25px auto;
+  margin-bottom: 25px;
+  transform: translateX(-7px);
 }
 .div-cont-img .legenda-1 {
   transform: translate(-110px, -155px);
@@ -572,30 +573,32 @@ footer .rodape p strong {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
   width: 90vw;
-  height: 80vh;
+  height: 90vh;
   background: var(--branco-1);
   border-radius: 20px;
   padding: 10px;
 }
 .autoplay .slick-track div h3 {
-  color: var(--preto-1) !important;
+  color: var(--cor-1) !important;
+  font-size: calc(var(--size) * 1.2) !important;
 }
 .autoplay .slick-track div p {
-  line-height: calc(var(--size) * 1);
+  line-height: calc(var(--size) * 0.8);
+  font-size: calc(var(--size) * 0.7);
+  font-weight: 300;
 }
-
-.carrossel-corporal-passos {
-  width: 300px;
-  height: 300px;
-  margin: 20px auto;
+.autoplay .slick-track div h4 {
+  font-size: calc(var(--size) * 0.8);
+  font-weight: 500;
+  color: var(--cor-2);
 }
-.carrossel-corporal-passos .slick-track div {
-  width: 300px;
-  height: 300px;
+.autoplay .slick-track div ul li {
+  font-size: calc(var(--size) * 0.6);
+  line-height: calc(var(--size) * 0.9);
 }
-.carrossel-corporal-passos .slick-track div img {
-  height: 300px;
-  width: 300px;
+.autoplay .slick-track div ul li strong {
+  font-weight: bold;
+  color: var(--cor-1);
 }/*# sourceMappingURL=style.css.map */
