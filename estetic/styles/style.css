@@ -468,18 +468,59 @@ footer .rodape p strong {
 
 .div-cont-img {
   margin: 20px auto;
-  height: 300px;
   width: 300px;
   border-radius: 10px;
-  background: linear-gradient(to bottom, var(--destaque-1), var(--destaque-2));
-  border: 1px solid var(--branco-1);
+  letter-spacing: 1px;
+  padding-top: 10px;
   display: grid;
   place-items: center;
+  background-color: var(--branco-1);
 }
-.div-cont-img p {
-  color: var(--branco-1);
+.div-cont-img img {
+  height: 200px;
+  width: 200px;
+  transform: translateX(-10px);
+}
+.div-cont-img .titulo-camadas {
+  font-size: calc(var(--size) * 1);
+  font-weight: 500;
+  color: var(--cor-1);
+  margin-bottom: 25px auto;
+}
+.div-cont-img .legenda-1 {
+  transform: translate(-110px, -155px);
+  font-weight: bold;
+  color: var(--cor-1);
+}
+.div-cont-img .legenda-2 {
+  transform: translate(110px, -105px);
+  font-weight: bold;
+  color: var(--cor-1);
+}
+.div-cont-img .legenda-3 {
+  transform: translate(-60px, -30px);
+  font-weight: bold;
+  color: var(--cor-1);
+}
+.div-cont-img .ex-camadas {
+  padding: 15px;
+}
+.div-cont-img .ex-camadas ul {
+  line-height: calc(var(--size) * 0.9);
+}
+.div-cont-img .ex-camadas ul strong {
+  font-weight: bold;
+}
+.div-cont-img ol {
+  color: var(--cor-3);
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: calc(var(--size) * 1);
+}
+.div-cont-img ol strong {
+  font-size: calc(var(--size) * 2);
+  color: var(--cor-1);
+  font-family: "Times New Roman", Times, serif;
 }
 
 .div-cont-rec {
@@ -543,4 +584,18 @@ footer .rodape p strong {
 }
 .autoplay .slick-track div p {
   line-height: calc(var(--size) * 1);
+}
+
+.carrossel-corporal-passos {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+}
+.carrossel-corporal-passos .slick-track div {
+  width: 300px;
+  height: 300px;
+}
+.carrossel-corporal-passos .slick-track div img {
+  height: 300px;
+  width: 300px;
 }/*# sourceMappingURL=style.css.map */
