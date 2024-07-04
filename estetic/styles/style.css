@@ -469,7 +469,7 @@ footer .rodape p strong {
 .div-cont-img {
   margin: 20px auto;
   width: 90%;
-  border-radius: 10px;
+  border-radius: 20px;
   letter-spacing: 1px;
   padding-top: 10px;
   display: grid;
@@ -489,17 +489,17 @@ footer .rodape p strong {
   transform: translateX(-7px);
 }
 .div-cont-img .legenda-1 {
-  transform: translate(-110px, -155px);
+  transform: translate(-115px, -156px);
   font-weight: bold;
   color: var(--cor-1);
 }
 .div-cont-img .legenda-2 {
-  transform: translate(110px, -105px);
+  transform: translate(115px, -96px);
   font-weight: bold;
   color: var(--cor-1);
 }
 .div-cont-img .legenda-3 {
-  transform: translate(-60px, -30px);
+  transform: translate(-108px, -30px);
   font-weight: bold;
   color: var(--cor-1);
 }

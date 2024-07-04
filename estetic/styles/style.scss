@@ -495,7 +495,7 @@ footer {
 .div-cont-img {
   margin: 20px auto;
   width: 90%;
-  border-radius: 10px;
+  border-radius: 20px;
   letter-spacing: 1px;
   padding-top: 10px;
 
@@ -519,19 +519,22 @@ footer {
   }
 
   .legenda-1 {
-    transform: translate(-110px, -155px);
+    // Epiderme X/Y
+    transform: translate(-115px, -156px);
     font-weight: bold;
     color: var(--cor-1);
   }
 
   .legenda-2 {
-    transform: translate(110px, -105px);
+    // Derme X/Y
+    transform: translate(115px, -96px);
     font-weight: bold;
     color: var(--cor-1);
   }
 
   .legenda-3 {
-    transform: translate(-60px, -30px);
+    // Hipoderme X/Y
+    transform: translate(-108px, -30px);
     font-weight: bold;
     color: var(--cor-1);
   }
