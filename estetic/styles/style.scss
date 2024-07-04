@@ -390,9 +390,25 @@ footer {
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
   }
 
-  .sub-h2 {
-    border-left: 15px solid var(--destaque-1);
-    color: var(--destaque-2);
+  .classificacao {
+    font-size: calc(var(--size) * .8);
+    text-align: center;
+  }
+
+  .classificacao-slides {
+    height: 60vh;
+    padding: 20px;
+  }
+
+  .forma {
+    list-style: disc inside;
+    li {
+      font-size: calc(var(--size) * .7) !important;
+      font-weight: 400;
+      &::marker {
+        color: var(--cor-2);
+      }
+    }
   }
 
   .main-h3 {
@@ -649,10 +665,12 @@ footer {
         font-weight: 500;
         color: var(--cor-2);
       }
+
       ul {
         li {
           font-size: calc(var(--size) * .6);
           line-height: calc(var(--size) * .9);
+
           strong {
             font-weight: bold;
             color: var(--cor-1);

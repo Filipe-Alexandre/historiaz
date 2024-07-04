@@ -326,16 +326,58 @@ footer .rodape p strong {
   border-radius: 10px;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
 }
-#esteticistas .sub-h2,
-#adm .sub-h2,
-#bio .sub-h2,
-#mkt .sub-h2,
-#cos .sub-h2,
-#fac .sub-h2,
-#cor .sub-h2,
-#bem .sub-h2 {
-  border-left: 15px solid var(--destaque-1);
-  color: var(--destaque-2);
+#esteticistas .classificacao,
+#adm .classificacao,
+#bio .classificacao,
+#mkt .classificacao,
+#cos .classificacao,
+#fac .classificacao,
+#cor .classificacao,
+#bem .classificacao {
+  font-size: calc(var(--size) * 0.8);
+  text-align: center;
+}
+#esteticistas .classificacao-slides,
+#adm .classificacao-slides,
+#bio .classificacao-slides,
+#mkt .classificacao-slides,
+#cos .classificacao-slides,
+#fac .classificacao-slides,
+#cor .classificacao-slides,
+#bem .classificacao-slides {
+  height: 60vh;
+  padding: 20px;
+}
+#esteticistas .forma,
+#adm .forma,
+#bio .forma,
+#mkt .forma,
+#cos .forma,
+#fac .forma,
+#cor .forma,
+#bem .forma {
+  list-style: disc inside;
+}
+#esteticistas .forma li,
+#adm .forma li,
+#bio .forma li,
+#mkt .forma li,
+#cos .forma li,
+#fac .forma li,
+#cor .forma li,
+#bem .forma li {
+  font-size: calc(var(--size) * 0.7) !important;
+  font-weight: 400;
+}
+#esteticistas .forma li::marker,
+#adm .forma li::marker,
+#bio .forma li::marker,
+#mkt .forma li::marker,
+#cos .forma li::marker,
+#fac .forma li::marker,
+#cor .forma li::marker,
+#bem .forma li::marker {
+  color: var(--cor-2);
 }
 #esteticistas .main-h3,
 #adm .main-h3,
