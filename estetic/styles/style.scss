@@ -567,36 +567,52 @@ footer {
         font-weight: bold;
       }
     }
-
   }
-
-
 }
 
 .passo-a-passo {
+  background-color: transparent;
   height: 90vh;
-  background-color: red;
+  place-items: top;
 
   ol {
-    color: var(--cor-3);
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 500;
+    width: 100%;
+    height: 45vh;
     font-size: calc(var(--size) * .7);
-    width: 90%;
+    padding: 10px;
 
     strong {
-      font-size: calc(var(--size) * 2);
-      color: var(--cor-1);
+      font-size: calc(var(--size) * 1.5);
       font-family: 'Times New Roman', Times, serif;
     }
   }
 
   .diurno {
     background-color: #FFF2A6;
+    color: var(--preto-1);
+    border-radius: 20px 20px 0 0;
+    display: grid;
+
+    .ttl-dia {
+      text-align: center;
+      font-weight: bold;
+      font-size: calc(var(--size) * .8);
+    }
   }
 
   .noturno {
     background-color: #11114E;
+    color: #db9cff;
+    border-radius: 0 0 20px 20px;
+    display: grid;
+
+    .ttl-noite {
+      text-align: center;
+      font-weight: bold;
+      font-size: calc(var(--size) * .8);
+    }
   }
 }
 

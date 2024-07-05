@@ -556,26 +556,43 @@ footer .rodape p strong {
 }
 
 .passo-a-passo {
+  background-color: transparent;
   height: 90vh;
-  background-color: red;
+  place-items: top;
 }
 .passo-a-passo ol {
-  color: var(--cor-3);
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
+  width: 100%;
+  height: 45vh;
   font-size: calc(var(--size) * 0.7);
-  width: 90%;
+  padding: 10px;
 }
 .passo-a-passo ol strong {
-  font-size: calc(var(--size) * 2);
-  color: var(--cor-1);
+  font-size: calc(var(--size) * 1.5);
   font-family: "Times New Roman", Times, serif;
 }
 .passo-a-passo .diurno {
   background-color: #FFF2A6;
+  color: var(--preto-1);
+  border-radius: 20px 20px 0 0;
+  display: grid;
+}
+.passo-a-passo .diurno .ttl-dia {
+  text-align: center;
+  font-weight: bold;
+  font-size: calc(var(--size) * 0.8);
 }
 .passo-a-passo .noturno {
   background-color: #11114E;
+  color: #db9cff;
+  border-radius: 0 0 20px 20px;
+  display: grid;
+}
+.passo-a-passo .noturno .ttl-noite {
+  text-align: center;
+  font-weight: bold;
+  font-size: calc(var(--size) * 0.8);
 }
 
 .div-cont-rec {
