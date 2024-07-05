@@ -402,9 +402,11 @@ footer {
 
   .forma {
     list-style: disc inside;
+
     li {
       font-size: calc(var(--size) * .7) !important;
       font-weight: 400;
+
       &::marker {
         color: var(--cor-2);
       }
@@ -568,18 +570,33 @@ footer {
 
   }
 
+
+}
+
+.passo-a-passo {
+  height: 90vh;
+  background-color: red;
+
   ol {
     color: var(--cor-3);
     text-transform: uppercase;
     font-weight: 400;
-    font-size: calc(var(--size) * 1);
-
+    font-size: calc(var(--size) * .7);
+    width: 90%;
 
     strong {
       font-size: calc(var(--size) * 2);
       color: var(--cor-1);
       font-family: 'Times New Roman', Times, serif;
     }
+  }
+
+  .diurno {
+    background-color: #FFFFE0;
+  }
+
+  .noturno {
+    background-color: #11114E;
   }
 }
 

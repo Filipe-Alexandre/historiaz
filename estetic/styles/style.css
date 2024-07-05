@@ -554,16 +554,28 @@ footer .rodape p strong {
 .div-cont-img .ex-camadas ul strong {
   font-weight: bold;
 }
-.div-cont-img ol {
+
+.passo-a-passo {
+  height: 90vh;
+  background-color: red;
+}
+.passo-a-passo ol {
   color: var(--cor-3);
   text-transform: uppercase;
   font-weight: 400;
-  font-size: calc(var(--size) * 1);
+  font-size: calc(var(--size) * 0.7);
+  width: 90%;
 }
-.div-cont-img ol strong {
+.passo-a-passo ol strong {
   font-size: calc(var(--size) * 2);
   color: var(--cor-1);
   font-family: "Times New Roman", Times, serif;
+}
+.passo-a-passo .diurno {
+  background-color: #FFFFE0;
+}
+.passo-a-passo .noturno {
+  background-color: #11114E;
 }
 
 .div-cont-rec {
