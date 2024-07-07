@@ -697,7 +697,6 @@ footer {
   .slick-track {
     border-radius: 20px;
 
-
     div {
       display: flex;
       justify-content: space-evenly;
@@ -738,6 +737,12 @@ footer {
           }
         }
       }
+    }
+
+    img {
+      align-self: center;
+      border-radius: 15px;
+      height: 85%;
     }
   }
 }

@@ -696,4 +696,9 @@ footer .rodape p strong {
 .autoplay .slick-track div ul li strong {
   font-weight: bold;
   color: var(--cor-1);
+}
+.autoplay .slick-track img {
+  align-self: center;
+  border-radius: 15px;
+  height: 85%;
 }/*# sourceMappingURL=style.css.map */
