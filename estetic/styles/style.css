@@ -573,21 +573,43 @@ footer .rodape p strong {
   font-family: "Times New Roman", Times, serif;
 }
 .passo-a-passo .diurno {
-  background-color: #FFF2A6;
+  background-color: #b5fff3;
   color: var(--preto-1);
   border-radius: 20px 20px 0 0;
   display: grid;
+}
+.passo-a-passo .diurno li {
+  z-index: 1;
+}
+.passo-a-passo .diurno .ceu {
+  display: flex;
+  position: absolute;
+}
+.passo-a-passo .diurno .ceu .nuvem {
+  transform: translate(-10px, -100px);
+  scale: 0.7;
+}
+.passo-a-passo .diurno .ceu .sol {
+  transform: translate(-100px, -100px);
+  scale: 0.5;
 }
 .passo-a-passo .diurno .ttl-dia {
   text-align: center;
   font-weight: bold;
   font-size: calc(var(--size) * 0.8);
+  z-index: 3;
 }
 .passo-a-passo .noturno {
-  background-color: #11114E;
+  background: #11114E url(../assets/estrelas.svg);
+  background-size: cover;
   color: #db9cff;
   border-radius: 0 0 20px 20px;
   display: grid;
+}
+.passo-a-passo .noturno img {
+  position: absolute;
+  scale: 0.5;
+  transform: translate(280px, 140px);
 }
 .passo-a-passo .noturno .ttl-noite {
   text-align: center;

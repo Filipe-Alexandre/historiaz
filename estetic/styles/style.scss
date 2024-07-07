@@ -590,23 +590,49 @@ footer {
   }
 
   .diurno {
-    background-color: #FFF2A6;
+    background-color: #b5fff3;
     color: var(--preto-1);
     border-radius: 20px 20px 0 0;
     display: grid;
+    
+    li {
+      z-index: 1;
+    }
+    .ceu {
+      display: flex;
+      position: absolute;
+
+      .nuvem {
+        transform: translate(-10px, -100px);
+        scale: .7;
+      }
+
+      .sol {
+        transform: translate(-100px, -100px);
+        scale: .5;
+      }
+    }
 
     .ttl-dia {
       text-align: center;
       font-weight: bold;
       font-size: calc(var(--size) * .8);
+      z-index: 3;
     }
   }
 
   .noturno {
-    background-color: #11114E;
+    background: #11114E url(../assets/estrelas.svg);
+    background-size: cover;
     color: #db9cff;
     border-radius: 0 0 20px 20px;
     display: grid;
+
+    img {
+      position: absolute;
+      scale: .5;
+      transform: translate(280px, 140px);
+    }
 
     .ttl-noite {
       text-align: center;
