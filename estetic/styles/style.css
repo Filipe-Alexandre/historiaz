@@ -701,4 +701,60 @@ footer .rodape p strong {
   align-self: center;
   border-radius: 15px;
   width: 100%;
+}
+
+.responsive {
+  width: 90vw;
+  margin: 20px auto;
+}
+.responsive img {
+  align-self: center;
+  border-radius: 15px;
+  width: 100%;
+}
+.responsive .slick-next,
+.responsive .slick-prev {
+  visibility: hidden;
+}
+.responsive .slick-track {
+  border-radius: 20px;
+}
+.responsive .slick-track div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 5px;
+  width: 90vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: var(--branco-1);
+  border-radius: 20px;
+  padding: 10px;
+}
+.responsive .slick-track div h3 {
+  color: var(--cor-1) !important;
+  font-size: calc(var(--size) * 1.2) !important;
+}
+.responsive .slick-track div p {
+  line-height: calc(var(--size) * 0.8);
+  font-size: calc(var(--size) * 0.7);
+  font-weight: 300;
+}
+.responsive .slick-track div h4 {
+  font-size: calc(var(--size) * 0.8);
+  font-weight: 500;
+  color: var(--cor-2);
+}
+.responsive .slick-track div ul li {
+  font-size: calc(var(--size) * 0.6);
+  line-height: calc(var(--size) * 0.9);
+}
+.responsive .slick-track div ul li strong {
+  font-weight: bold;
+  color: var(--cor-1);
+}
+.responsive .slick-track img {
+  align-self: center;
+  border-radius: 15px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
