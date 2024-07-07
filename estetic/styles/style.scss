@@ -629,9 +629,11 @@ footer {
     display: grid;
 
     img {
+      display: flex;
       position: absolute;
       scale: .5;
-      transform: translate(280px, 140px);
+      right: -20px;
+      transform: translateY(80%);
     }
 
     .ttl-noite {

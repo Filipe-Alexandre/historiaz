@@ -607,9 +607,11 @@ footer .rodape p strong {
   display: grid;
 }
 .passo-a-passo .noturno img {
+  display: flex;
   position: absolute;
   scale: 0.5;
-  transform: translate(280px, 140px);
+  right: -20px;
+  transform: translateY(80%);
 }
 .passo-a-passo .noturno .ttl-noite {
   text-align: center;
