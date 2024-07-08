@@ -135,28 +135,28 @@ main .categorias .btn-cat-fim {
   font-size: calc(var(--size) * 1);
 }
 main .categorias .span-bio {
-  background: url(../assets/bio-bg.png);
+  background: url(../assets/img-index/bio-bg.png);
 }
 main .categorias .span-adm {
-  background: url(../assets/adm-bg.png);
+  background: url(../assets/img-index/adm-bg.png);
 }
 main .categorias .span-mkt {
-  background: url(../assets/mkt-bg.png);
+  background: url(../assets/img-index/mkt-bg.png);
 }
 main .categorias .span-hab {
-  background: url(../assets/hab-bg.png);
+  background: url(../assets/img-index/hab-bg.png);
 }
 main .categorias .span-cos {
-  background: url(../assets/cos-bg.png);
+  background: url(../assets/img-index/cos-bg.png);
 }
 main .categorias .span-fac {
-  background: url(../assets/fac-bg.png);
+  background: url(../assets/img-index/fac-bg.png);
 }
 main .categorias .span-cor {
-  background: url(../assets/cor-bg.png);
+  background: url(../assets/img-index/cor-bg.png);
 }
 main .categorias .span-bem {
-  background: url(../assets/bem-bg.png);
+  background: url(../assets/img-index/bem-bg.png);
 }
 main .categorias .span {
   height: 100%;
@@ -556,6 +556,7 @@ footer .rodape p strong {
 }
 .div-cont img {
   border-radius: 10px;
+  width: 100%;
 }
 
 .div-cont-img {
