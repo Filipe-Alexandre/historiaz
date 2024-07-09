@@ -509,15 +509,15 @@ footer .rodape p strong {
   font-weight: 600;
   font-size: calc(var(--size) * 0.7);
 }
+#bem h5 {
+  font-weight: 500;
+  text-align: center;
+}
 #bem ul strong {
   font-weight: 600;
   color: var(--destaque-2);
   font-size: calc(var(--size) * 0.8);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-#bem h5 {
-  font-weight: 500;
-  text-align: center;
 }
 #bem summary {
   text-transform: uppercase;
@@ -543,8 +543,13 @@ footer .rodape p strong {
 #bem details[open] > summary::after {
   content: " -";
 }
-
-.div-cont {
+#bem .back {
+  background-color: var(--destaque-2) !important;
+}
+#bem .back i {
+  color: var(--branco-1) !important;
+}
+#bem .div-cont {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -555,20 +560,19 @@ footer .rodape p strong {
   padding: 15px;
   line-height: calc(var(--size) * 1);
 }
-.div-cont video {
+#bem .div-cont video {
   border-radius: 10px;
 }
-.div-cont img {
+#bem .div-cont img {
   border-radius: 10px;
   width: 100%;
 }
-.div-cont ul li strong {
+#bem .div-cont ul li strong {
   font-weight: 600;
   color: var(--cor-1);
   font-size: calc(var(--size) * 0.65);
 }
-
-.div-cont-img {
+#bem .div-cont-img {
   margin: 20px auto;
   width: 90%;
   border-radius: 20px;
@@ -578,49 +582,48 @@ footer .rodape p strong {
   place-items: center;
   background-color: var(--branco-1);
 }
-.div-cont-img img {
+#bem .div-cont-img img {
   height: 200px;
   width: 200px;
   transform: translateX(-10px);
 }
-.div-cont-img .titulo-camadas {
+#bem .div-cont-img .titulo-camadas {
   font-size: calc(var(--size) * 1);
   font-weight: 500;
   color: var(--cor-1);
   margin-bottom: 25px;
   transform: translateX(-7px);
 }
-.div-cont-img .legenda-1 {
+#bem .div-cont-img .legenda-1 {
   transform: translate(-115px, -156px);
   font-weight: bold;
   color: var(--cor-1);
 }
-.div-cont-img .legenda-2 {
+#bem .div-cont-img .legenda-2 {
   transform: translate(115px, -96px);
   font-weight: bold;
   color: var(--cor-1);
 }
-.div-cont-img .legenda-3 {
+#bem .div-cont-img .legenda-3 {
   transform: translate(-108px, -30px);
   font-weight: bold;
   color: var(--cor-1);
 }
-.div-cont-img .ex-camadas {
+#bem .div-cont-img .ex-camadas {
   padding: 15px;
 }
-.div-cont-img .ex-camadas ul {
+#bem .div-cont-img .ex-camadas ul {
   line-height: calc(var(--size) * 0.9);
 }
-.div-cont-img .ex-camadas ul strong {
+#bem .div-cont-img .ex-camadas ul strong {
   font-weight: bold;
 }
-
-.passo-a-passo {
+#bem .passo-a-passo {
   background-color: transparent;
   height: 90vh;
   place-items: top;
 }
-.passo-a-passo ol {
+#bem .passo-a-passo ol {
   text-transform: uppercase;
   font-weight: 500;
   width: 100%;
@@ -628,45 +631,45 @@ footer .rodape p strong {
   font-size: calc(var(--size) * 0.7);
   padding: 10px;
 }
-.passo-a-passo ol strong {
+#bem .passo-a-passo ol strong {
   font-size: calc(var(--size) * 1.5);
   font-family: "Times New Roman", Times, serif;
 }
-.passo-a-passo .diurno {
+#bem .passo-a-passo .diurno {
   background-color: #b5fff3;
   color: var(--preto-1);
   border-radius: 20px 20px 0 0;
   display: grid;
 }
-.passo-a-passo .diurno li {
+#bem .passo-a-passo .diurno li {
   z-index: 1;
 }
-.passo-a-passo .diurno .ceu {
+#bem .passo-a-passo .diurno .ceu {
   display: flex;
   position: absolute;
 }
-.passo-a-passo .diurno .ceu .nuvem {
+#bem .passo-a-passo .diurno .ceu .nuvem {
   transform: translate(-10px, -100px);
   scale: 0.7;
 }
-.passo-a-passo .diurno .ceu .sol {
+#bem .passo-a-passo .diurno .ceu .sol {
   transform: translate(-100px, -100px);
   scale: 0.5;
 }
-.passo-a-passo .diurno .ttl-dia {
+#bem .passo-a-passo .diurno .ttl-dia {
   text-align: center;
   font-weight: bold;
   font-size: calc(var(--size) * 0.8);
   z-index: 3;
 }
-.passo-a-passo .noturno {
+#bem .passo-a-passo .noturno {
   background: #11114E url(../assets/estrelas.svg);
   background-size: cover;
   color: #db9cff;
   border-radius: 0 0 20px 20px;
   display: grid;
 }
-.passo-a-passo .noturno img {
+#bem .passo-a-passo .noturno img {
   display: flex;
   position: absolute;
   scale: 0.5;
@@ -674,13 +677,12 @@ footer .rodape p strong {
   transform: translateY(80%);
   visibility: hidden;
 }
-.passo-a-passo .noturno .ttl-noite {
+#bem .passo-a-passo .noturno .ttl-noite {
   text-align: center;
   font-weight: bold;
   font-size: calc(var(--size) * 0.8);
 }
-
-.div-cont-rec {
+#bem .div-cont-rec {
   display: flex;
   flex-direction: column;
   width: 90vw;
@@ -692,40 +694,39 @@ footer .rodape p strong {
   line-height: calc(var(--size) * 0.8);
   gap: 10px;
 }
-.div-cont-rec h3 {
+#bem .div-cont-rec h3 {
   font-size: calc(var(--size) * 0.8);
   letter-spacing: 2px;
   text-align: left;
   width: 80%;
   text-decoration: none;
 }
-.div-cont-rec h4 {
+#bem .div-cont-rec h4 {
   font-weight: 500;
   text-align: left;
 }
-.div-cont-rec ol li {
+#bem .div-cont-rec ol li {
   list-style: disc;
 }
-.div-cont-rec p {
+#bem .div-cont-rec p {
   font-weight: 500;
   background: var(--destaque-2);
   padding: 10px;
   border-radius: 7px;
   margin: 10px auto;
 }
-
-.autoplay {
+#bem .autoplay {
   width: 90vw;
   margin: 20px auto;
 }
-.autoplay .slick-next,
-.autoplay .slick-prev {
+#bem .autoplay .slick-next,
+#bem .autoplay .slick-prev {
   visibility: hidden;
 }
-.autoplay .slick-track {
+#bem .autoplay .slick-track {
   border-radius: 20px;
 }
-.autoplay .slick-track div {
+#bem .autoplay .slick-track div {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -736,51 +737,50 @@ footer .rodape p strong {
   border-radius: 20px;
   padding: 10px;
 }
-.autoplay .slick-track div h3 {
+#bem .autoplay .slick-track div h3 {
   color: var(--cor-1) !important;
   font-size: calc(var(--size) * 1.2) !important;
 }
-.autoplay .slick-track div p {
+#bem .autoplay .slick-track div p {
   line-height: calc(var(--size) * 0.8);
   font-size: calc(var(--size) * 0.7);
   font-weight: 300;
 }
-.autoplay .slick-track div h4 {
+#bem .autoplay .slick-track div h4 {
   font-size: calc(var(--size) * 0.8);
   font-weight: 500;
   color: var(--cor-2);
 }
-.autoplay .slick-track div ul li {
+#bem .autoplay .slick-track div ul li {
   font-size: calc(var(--size) * 0.6);
   line-height: calc(var(--size) * 0.9);
 }
-.autoplay .slick-track div ul li strong {
+#bem .autoplay .slick-track div ul li strong {
   font-weight: bold;
   color: var(--cor-1);
 }
-.autoplay .slick-track img {
+#bem .autoplay .slick-track img {
   align-self: center;
   border-radius: 15px;
   width: 100%;
 }
-
-.responsive {
+#bem .responsive {
   width: 90vw;
   margin: 20px auto;
 }
-.responsive img {
+#bem .responsive img {
   align-self: center;
   border-radius: 15px;
   width: 100%;
 }
-.responsive .slick-next,
-.responsive .slick-prev {
+#bem .responsive .slick-next,
+#bem .responsive .slick-prev {
   visibility: hidden;
 }
-.responsive .slick-track {
+#bem .responsive .slick-track {
   border-radius: 20px;
 }
-.responsive .slick-track div {
+#bem .responsive .slick-track div {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -792,30 +792,53 @@ footer .rodape p strong {
   border-radius: 20px;
   padding: 10px;
 }
-.responsive .slick-track div h3 {
+#bem .responsive .slick-track div h3 {
   color: var(--cor-1) !important;
   font-size: calc(var(--size) * 1.2) !important;
 }
-.responsive .slick-track div p {
+#bem .responsive .slick-track div p {
   line-height: calc(var(--size) * 0.8);
   font-size: calc(var(--size) * 0.7);
   font-weight: 300;
 }
-.responsive .slick-track div h4 {
+#bem .responsive .slick-track div h4 {
   font-size: calc(var(--size) * 0.8);
   font-weight: 500;
   color: var(--cor-2);
 }
-.responsive .slick-track div ul li {
+#bem .responsive .slick-track div ul li {
   font-size: calc(var(--size) * 0.6);
   line-height: calc(var(--size) * 0.9);
 }
-.responsive .slick-track div ul li strong {
+#bem .responsive .slick-track div ul li strong {
   font-weight: bold;
   color: var(--cor-1);
 }
-.responsive .slick-track img {
+#bem .responsive .slick-track img {
   align-self: center;
   border-radius: 15px;
   width: 100%;
+}
+#bem .back {
+  display: grid;
+  place-items: center;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  background-color: var(--cor-1);
+  opacity: 90%;
+  transition: 0.5 ease;
+}
+#bem .back:hover {
+  scale: 1.1;
+  opacity: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#bem .back i {
+  color: var(--cor-2);
+  font-size: calc(var(--size) * 0.8);
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
