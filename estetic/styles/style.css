@@ -127,7 +127,8 @@ main .categorias .btn-cat-fim {
 }
 main .categorias .btn-cat-ini {
   grid-area: cat;
-  font-size: calc(var(--size) * 0.65);
+  font-family: var(--titulo);
+  font-size: calc(var(--size) * 1);
 }
 main .categorias .btn-cat-fim {
   grid-area: fim;
@@ -322,7 +323,7 @@ footer .rodape p strong {
   font-weight: 600;
   letter-spacing: 2px;
   height: 70px;
-  width: 90%;
+  width: 90vw;
   border-radius: 10px;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
 }
@@ -391,6 +392,7 @@ footer .rodape p strong {
   font-size: calc(var(--size) * 0.7);
   font-weight: 600;
   letter-spacing: 2px;
+  width: 90vw;
 }
 #esteticistas p,
 #adm p,
@@ -494,12 +496,14 @@ footer .rodape p strong {
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
 }
 #bem .main-h3 {
+  margin: auto;
   color: var(--destaque-2);
   letter-spacing: 2px;
   text-align: center;
   font-size: calc(var(--size) * 1);
   font-weight: 700;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  width: 90%;
 }
 #bem h4 {
   font-weight: 600;
@@ -666,8 +670,9 @@ footer .rodape p strong {
   display: flex;
   position: absolute;
   scale: 0.5;
-  right: -20px;
+  left: 50px;
   transform: translateY(80%);
+  visibility: hidden;
 }
 .passo-a-passo .noturno .ttl-noite {
   text-align: center;
@@ -678,7 +683,7 @@ footer .rodape p strong {
 .div-cont-rec {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 90vw;
   background-color: var(--branco-1);
   margin: 20px auto;
   border-radius: 10px;

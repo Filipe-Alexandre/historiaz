@@ -157,7 +157,8 @@ main {
 
     .btn-cat-ini {
       grid-area: cat;
-      font-size: calc(var(--size) * .65);
+      font-family: var(--titulo);
+      font-size: calc(var(--size) * 1);
     }
 
     .btn-cat-fim {
@@ -384,7 +385,7 @@ footer {
     letter-spacing: 2px;
 
     height: 70px;
-    width: 90%;
+    width: 90vw;
     border-radius: 10px;
 
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
@@ -418,6 +419,7 @@ footer {
     font-size: calc(var(--size) * .7);
     font-weight: 600;
     letter-spacing: 2px;
+    width: 90vw;
 
   }
 
@@ -471,6 +473,7 @@ footer {
 }
 
 #bem {
+
   //cores diferentes
   .main-h2 {
     display: grid;
@@ -495,12 +498,14 @@ footer {
   }
 
   .main-h3 {
+    margin: auto;
     color: var(--destaque-2);
     letter-spacing: 2px;
     text-align: center;
     font-size: calc(var(--size) * 1);
     font-weight: 700;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    width: 90%;
   }
 
   h4 {
@@ -551,6 +556,7 @@ footer {
   details[open]>summary::after {
     content: " -";
   }
+
 }
 
 .div-cont {
@@ -707,8 +713,9 @@ footer {
       display: flex;
       position: absolute;
       scale: .5;
-      right: -20px;
+      left: 50px;
       transform: translateY(80%);
+      visibility: hidden;
     }
 
     .ttl-noite {
@@ -722,7 +729,7 @@ footer {
 .div-cont-rec {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 90vw;
   background-color: var(--branco-1);
   margin: 20px auto;
   border-radius: 10px;
