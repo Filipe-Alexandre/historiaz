@@ -544,12 +544,14 @@ footer .rodape p strong {
   content: " -";
 }
 #bem .back {
-  background-color: var(--destaque-2) !important;
+  background-color: var(--destaque-1);
+  border: 1px solid var(--preto-1);
 }
 #bem .back i {
-  color: var(--branco-1) !important;
+  color: var(--preto-1);
 }
-#bem .div-cont {
+
+.div-cont {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -560,19 +562,20 @@ footer .rodape p strong {
   padding: 15px;
   line-height: calc(var(--size) * 1);
 }
-#bem .div-cont video {
+.div-cont video {
   border-radius: 10px;
 }
-#bem .div-cont img {
+.div-cont img {
   border-radius: 10px;
   width: 100%;
 }
-#bem .div-cont ul li strong {
+.div-cont ul li strong {
   font-weight: 600;
   color: var(--cor-1);
   font-size: calc(var(--size) * 0.65);
 }
-#bem .div-cont-img {
+
+.div-cont-img {
   margin: 20px auto;
   width: 90%;
   border-radius: 20px;
@@ -582,48 +585,49 @@ footer .rodape p strong {
   place-items: center;
   background-color: var(--branco-1);
 }
-#bem .div-cont-img img {
+.div-cont-img img {
   height: 200px;
   width: 200px;
   transform: translateX(-10px);
 }
-#bem .div-cont-img .titulo-camadas {
+.div-cont-img .titulo-camadas {
   font-size: calc(var(--size) * 1);
   font-weight: 500;
   color: var(--cor-1);
   margin-bottom: 25px;
   transform: translateX(-7px);
 }
-#bem .div-cont-img .legenda-1 {
+.div-cont-img .legenda-1 {
   transform: translate(-115px, -156px);
   font-weight: bold;
   color: var(--cor-1);
 }
-#bem .div-cont-img .legenda-2 {
+.div-cont-img .legenda-2 {
   transform: translate(115px, -96px);
   font-weight: bold;
   color: var(--cor-1);
 }
-#bem .div-cont-img .legenda-3 {
+.div-cont-img .legenda-3 {
   transform: translate(-108px, -30px);
   font-weight: bold;
   color: var(--cor-1);
 }
-#bem .div-cont-img .ex-camadas {
+.div-cont-img .ex-camadas {
   padding: 15px;
 }
-#bem .div-cont-img .ex-camadas ul {
+.div-cont-img .ex-camadas ul {
   line-height: calc(var(--size) * 0.9);
 }
-#bem .div-cont-img .ex-camadas ul strong {
+.div-cont-img .ex-camadas ul strong {
   font-weight: bold;
 }
-#bem .passo-a-passo {
+
+.passo-a-passo {
   background-color: transparent;
   height: 90vh;
   place-items: top;
 }
-#bem .passo-a-passo ol {
+.passo-a-passo ol {
   text-transform: uppercase;
   font-weight: 500;
   width: 100%;
@@ -631,45 +635,45 @@ footer .rodape p strong {
   font-size: calc(var(--size) * 0.7);
   padding: 10px;
 }
-#bem .passo-a-passo ol strong {
+.passo-a-passo ol strong {
   font-size: calc(var(--size) * 1.5);
   font-family: "Times New Roman", Times, serif;
 }
-#bem .passo-a-passo .diurno {
+.passo-a-passo .diurno {
   background-color: #b5fff3;
   color: var(--preto-1);
   border-radius: 20px 20px 0 0;
   display: grid;
 }
-#bem .passo-a-passo .diurno li {
+.passo-a-passo .diurno li {
   z-index: 1;
 }
-#bem .passo-a-passo .diurno .ceu {
+.passo-a-passo .diurno .ceu {
   display: flex;
   position: absolute;
 }
-#bem .passo-a-passo .diurno .ceu .nuvem {
+.passo-a-passo .diurno .ceu .nuvem {
   transform: translate(-10px, -100px);
   scale: 0.7;
 }
-#bem .passo-a-passo .diurno .ceu .sol {
+.passo-a-passo .diurno .ceu .sol {
   transform: translate(-100px, -100px);
   scale: 0.5;
 }
-#bem .passo-a-passo .diurno .ttl-dia {
+.passo-a-passo .diurno .ttl-dia {
   text-align: center;
   font-weight: bold;
   font-size: calc(var(--size) * 0.8);
   z-index: 3;
 }
-#bem .passo-a-passo .noturno {
+.passo-a-passo .noturno {
   background: #11114E url(../assets/estrelas.svg);
   background-size: cover;
   color: #db9cff;
   border-radius: 0 0 20px 20px;
   display: grid;
 }
-#bem .passo-a-passo .noturno img {
+.passo-a-passo .noturno img {
   display: flex;
   position: absolute;
   scale: 0.5;
@@ -677,12 +681,13 @@ footer .rodape p strong {
   transform: translateY(80%);
   visibility: hidden;
 }
-#bem .passo-a-passo .noturno .ttl-noite {
+.passo-a-passo .noturno .ttl-noite {
   text-align: center;
   font-weight: bold;
   font-size: calc(var(--size) * 0.8);
 }
-#bem .div-cont-rec {
+
+.div-cont-rec {
   display: flex;
   flex-direction: column;
   width: 90vw;
@@ -694,39 +699,40 @@ footer .rodape p strong {
   line-height: calc(var(--size) * 0.8);
   gap: 10px;
 }
-#bem .div-cont-rec h3 {
+.div-cont-rec h3 {
   font-size: calc(var(--size) * 0.8);
   letter-spacing: 2px;
   text-align: left;
   width: 80%;
   text-decoration: none;
 }
-#bem .div-cont-rec h4 {
+.div-cont-rec h4 {
   font-weight: 500;
   text-align: left;
 }
-#bem .div-cont-rec ol li {
+.div-cont-rec ol li {
   list-style: disc;
 }
-#bem .div-cont-rec p {
+.div-cont-rec p {
   font-weight: 500;
   background: var(--destaque-2);
   padding: 10px;
   border-radius: 7px;
   margin: 10px auto;
 }
-#bem .autoplay {
+
+.autoplay {
   width: 90vw;
   margin: 20px auto;
 }
-#bem .autoplay .slick-next,
-#bem .autoplay .slick-prev {
+.autoplay .slick-next,
+.autoplay .slick-prev {
   visibility: hidden;
 }
-#bem .autoplay .slick-track {
+.autoplay .slick-track {
   border-radius: 20px;
 }
-#bem .autoplay .slick-track div {
+.autoplay .slick-track div {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -737,50 +743,51 @@ footer .rodape p strong {
   border-radius: 20px;
   padding: 10px;
 }
-#bem .autoplay .slick-track div h3 {
+.autoplay .slick-track div h3 {
   color: var(--cor-1) !important;
   font-size: calc(var(--size) * 1.2) !important;
 }
-#bem .autoplay .slick-track div p {
+.autoplay .slick-track div p {
   line-height: calc(var(--size) * 0.8);
   font-size: calc(var(--size) * 0.7);
   font-weight: 300;
 }
-#bem .autoplay .slick-track div h4 {
+.autoplay .slick-track div h4 {
   font-size: calc(var(--size) * 0.8);
   font-weight: 500;
   color: var(--cor-2);
 }
-#bem .autoplay .slick-track div ul li {
+.autoplay .slick-track div ul li {
   font-size: calc(var(--size) * 0.6);
   line-height: calc(var(--size) * 0.9);
 }
-#bem .autoplay .slick-track div ul li strong {
+.autoplay .slick-track div ul li strong {
   font-weight: bold;
   color: var(--cor-1);
 }
-#bem .autoplay .slick-track img {
+.autoplay .slick-track img {
   align-self: center;
   border-radius: 15px;
   width: 100%;
 }
-#bem .responsive {
+
+.responsive {
   width: 90vw;
   margin: 20px auto;
 }
-#bem .responsive img {
+.responsive img {
   align-self: center;
   border-radius: 15px;
   width: 100%;
 }
-#bem .responsive .slick-next,
-#bem .responsive .slick-prev {
+.responsive .slick-next,
+.responsive .slick-prev {
   visibility: hidden;
 }
-#bem .responsive .slick-track {
+.responsive .slick-track {
   border-radius: 20px;
 }
-#bem .responsive .slick-track div {
+.responsive .slick-track div {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -792,34 +799,35 @@ footer .rodape p strong {
   border-radius: 20px;
   padding: 10px;
 }
-#bem .responsive .slick-track div h3 {
+.responsive .slick-track div h3 {
   color: var(--cor-1) !important;
   font-size: calc(var(--size) * 1.2) !important;
 }
-#bem .responsive .slick-track div p {
+.responsive .slick-track div p {
   line-height: calc(var(--size) * 0.8);
   font-size: calc(var(--size) * 0.7);
   font-weight: 300;
 }
-#bem .responsive .slick-track div h4 {
+.responsive .slick-track div h4 {
   font-size: calc(var(--size) * 0.8);
   font-weight: 500;
   color: var(--cor-2);
 }
-#bem .responsive .slick-track div ul li {
+.responsive .slick-track div ul li {
   font-size: calc(var(--size) * 0.6);
   line-height: calc(var(--size) * 0.9);
 }
-#bem .responsive .slick-track div ul li strong {
+.responsive .slick-track div ul li strong {
   font-weight: bold;
   color: var(--cor-1);
 }
-#bem .responsive .slick-track img {
+.responsive .slick-track img {
   align-self: center;
   border-radius: 15px;
   width: 100%;
 }
-#bem .back {
+
+.back {
   display: grid;
   place-items: center;
   height: 40px;
@@ -832,12 +840,12 @@ footer .rodape p strong {
   opacity: 90%;
   transition: 0.5 ease;
 }
-#bem .back:hover {
+.back:hover {
   scale: 1.1;
   opacity: 100%;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-#bem .back i {
+.back i {
   color: var(--cor-2);
   font-size: calc(var(--size) * 0.8);
   font-weight: bold;
