@@ -572,6 +572,16 @@ footer {
     border-radius: 10px;
     width: 100%;
   }
+
+  ul {
+    li {
+      strong {
+        font-weight: 600;
+        color: var(--cor-1);
+        font-size: calc(var(--size) * .65);
+      }
+    }
+  }
 }
 
 .div-cont-img {

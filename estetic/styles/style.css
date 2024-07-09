@@ -558,6 +558,11 @@ footer .rodape p strong {
   border-radius: 10px;
   width: 100%;
 }
+.div-cont ul li strong {
+  font-weight: 600;
+  color: var(--cor-1);
+  font-size: calc(var(--size) * 0.65);
+}
 
 .div-cont-img {
   margin: 20px auto;
