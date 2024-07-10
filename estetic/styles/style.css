@@ -15,6 +15,7 @@
 
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html {
@@ -577,7 +578,7 @@ footer .rodape p strong {
 
 .div-cont-img {
   margin: 20px auto;
-  width: 90%;
+  width: 90vw;
   border-radius: 20px;
   letter-spacing: 1px;
   padding-top: 10px;
