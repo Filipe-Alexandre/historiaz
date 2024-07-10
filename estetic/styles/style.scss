@@ -20,13 +20,13 @@
 
 * {
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 html {
   background-color: var(--cor-3);
   scroll-behavior: smooth;
   cursor: default;
+  transform: var(--suave);
 }
 
 header {
