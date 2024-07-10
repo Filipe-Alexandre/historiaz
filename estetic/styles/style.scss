@@ -558,6 +558,14 @@ footer {
     content: " -";
   }
 
+  .autoplay {
+    .slick-track {
+      div {
+        height: 400px;
+      }
+    }
+  }
+
   .back {
     background-color: var(--destaque-1);
 

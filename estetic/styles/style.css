@@ -544,6 +544,9 @@ footer .rodape p strong {
 #bem details[open] > summary::after {
   content: " -";
 }
+#bem .autoplay .slick-track div {
+  height: 400px;
+}
 #bem .back {
   background-color: var(--destaque-1);
   border: 1px solid var(--preto-1);
